@@ -1,0 +1,21 @@
+.memory-card {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.memory-card.question {
+    width: 100px;
+    height: 200px;
+    background-color: #5B5EA6;
+}
+
+.memory-card.question:before {
+    content: '?';
+    font-size: 100px;
+    color: white;
+    display: flex;
+    align-content: center;
+    align-items: center;    
+    justify-content: center;
+    
+}
