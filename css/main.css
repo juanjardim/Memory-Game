@@ -1,21 +1,41 @@
 .memory-card {
-    margin: 10px;
     cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    height: 200px;
+
 }
 
+
 .memory-card.question {
-    width: 100px;
-    height: 200px;
-    background-color: #5B5EA6;
+    background-color: #5B5EA6;    
 }
 
 .memory-card.question:before {
     content: '?';
     font-size: 100px;
     color: white;
-    display: flex;
-    align-content: center;
-    align-items: center;    
-    justify-content: center;
-    
+}
+
+.question > .fas {
+    display: none;
+}
+.memory-card.valid > .fas {
+    color: #88B04B;
+}
+
+.memory-card > .fas {
+    text-align: center;
+    font-size: 100px;
+}
+
+@media only screen and (max-width: 576px) {
+    .memory-card {
+        margin: 5px;
+        max-width: 50%;
+        height: 150px;
+    }
 }
